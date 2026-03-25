@@ -1245,3 +1245,50 @@ section.is-visible .btn-outline:nth-of-type(2) {
 .hidden {
   display: none !important;
 }
+
+
+.fairy-dust {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.fairy-particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: radial-gradient(circle,
+    rgba(255,255,255,0.95) 0%,
+    rgba(220,225,230,0.85) 25%,
+    rgba(190,198,208,0.45) 50%,
+    rgba(255,255,255,0) 75%
+  );
+  box-shadow:
+    0 0 8px rgba(255,255,255,0.8),
+    0 0 14px rgba(210,218,228,0.55),
+    0 0 22px rgba(255,255,255,0.35);
+  opacity: 0;
+  animation: fairyTwinkle linear infinite;
+}
+
+@keyframes fairyTwinkle {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.4);
+  }
+  20% {
+    opacity: 0.85;
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: translateY(-8px) scale(0.9);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.5);
+  }
+}

@@ -574,3 +574,25 @@ function updateCountdown() {
 
 updateCountdown();
 const countdownInterval = setInterval(updateCountdown, 1000);
+
+//animacion de sparkle
+const fairyContainer = document.querySelector(".fairy-dust");
+
+if (fairyContainer) {
+  for (let i = 0; i < 35; i++) {
+    const particle = document.createElement("span");
+    particle.classList.add("fairy-particle");
+
+    particle.style.left = Math.random() * 100 + "%";
+    particle.style.top = Math.random() * 100 + "%";
+
+    const size = 4 + Math.random() * 8;
+    particle.style.width = `${size}px`;
+    particle.style.height = `${size}px`;
+
+    particle.style.animationDuration = `${3 + Math.random() * 4}s`;
+    particle.style.animationDelay = `${Math.random() * 5}s`;
+
+    fairyContainer.appendChild(particle);
+  }
+}
