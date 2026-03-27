@@ -144,7 +144,7 @@
   .guest-seats{
     margin-top:6px;
     font-size:14px;
-    color:var(--olive-dark);
+    color:#a16767;
     font-family: var(--text);
     font-size: 20px;
     font-style: italic;
@@ -486,17 +486,15 @@ a{
     font-family: var(--cursive);
     font-weight: 500;
     /* Degradado dorado */
-    background: linear-gradient(
-  120deg,
-  #d6d7dc 0%,
-  #b3b7bf 18%,
-  #8e949d 34%,
-  #686f78 46%,
-  #cfd3da 52%,
-  #8e949d 63%,
-  #565c65 80%,
-  #b3b7bf 95%
-);
+    background: linear-gradient(120deg, 
+    #f5c3cc 0%,
+    #e58a9b 20%,
+    #d46a7f 40%,
+    #f7aebc 50%,   /* ← highlight controlado */
+    #d46a7f 60%,
+    #c85a70 80%,
+    #e58a9b 100%
+    );
     background-size: 200% auto;
     -webkit-background-clip: text;
     color: transparent;
@@ -521,17 +519,15 @@ a{
     margin:0;
     font-family: var(--cursive);
     font-size:38px;
-    background: linear-gradient(
-  120deg,
-  #d6d7dc 0%,
-  #b3b7bf 18%,
-  #8e949d 34%,
-  #686f78 46%,
-  #cfd3da 52%,
-  #8e949d 63%,
-  #565c65 80%,
-  #b3b7bf 95%
-);
+    background: linear-gradient(120deg, 
+    #f5c3cc 0%,
+    #e58a9b 20%,
+    #d46a7f 40%,
+    #f7aebc 50%,   /* ← highlight controlado */
+    #d46a7f 60%,
+    #c85a70 80%,
+    #e58a9b 100%
+    );
     background-size: 200% auto;
     -webkit-background-clip: text;
     color: transparent;
