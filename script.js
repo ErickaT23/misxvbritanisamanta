@@ -28,12 +28,12 @@ if (envelope) {
 
 // 6) Foto separador rotativa (si existe el elemento)
 initRotatingSep([
-  "images/FOTOS/h1.jpg",
-  "images/FOTOS/h2.jpg",
-  "images/FOTOS/h3.jpg",
-  "images/FOTOS/h4.jpg",
-  "images/FOTOS/h5.jpg",
-  "images/FOTOS/h6.jpg"
+  "Images/FOTOS/h1.jpg",
+  "Images/FOTOS/h2.jpg",
+  "Images/FOTOS/h3.jpg",
+  "Images/FOTOS/h4.jpg",
+  "Images/FOTOS/h5.jpg",
+  "Images/FOTOS/h6.jpg"
 ]);
 });
 
