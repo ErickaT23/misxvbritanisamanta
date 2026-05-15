@@ -1,6 +1,8 @@
 :root{
     --bg: #f7f4ef;
     --ink: #1d1d1d;
+    --olive: #b86b7f;
+    --olive-dark: #93525e;
   
     --line: rgba(29,29,29,.18);
     --card: rgba(255,255,255,.65);
@@ -16,6 +18,12 @@
   }
   
   *{box-sizing:border-box}
+  html,
+  body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+  }
   body{
     margin:0;
     background:white;
@@ -194,7 +202,7 @@ a{
   .hero-photo{
     height:100vh;
     position:relative;
-    background:url("Images/FOTOS/v8.jpg") center/cover no-repeat;
+    background:url("Images/FOTOS/V5.jpeg") center/cover no-repeat;
   }
   .hero-photo {
     position: relative;
@@ -202,7 +210,6 @@ a{
   }
   .hero-overlay{
     position:absolute; inset:0;
-    background:linear-gradient(to bottom, rgba(0,0,0,.35), rgba(0,0,0,.05));
     display:flex;
     align-items:flex-start;
     justify-content:center;
@@ -970,7 +977,7 @@ a{
     object-fit: contain;
   }
   .hero-mono-img {
-    width: 100px;
+    width: 60px;
     filter: drop-shadow(0 5px 15px rgba(0, 0, 0, .1));
   }
   .calendar-btn{
@@ -1010,12 +1017,10 @@ section h3,
 section p,
 section .event-icon {
   opacity: 0;
-  transform: translateY(28px) scale(.98);
-  filter: blur(3px);
-  transition: opacity .9s cubic-bezier(.2,.8,.2,1),
-              transform .9s cubic-bezier(.2,.8,.2,1),
-              filter .9s cubic-bezier(.2,.8,.2,1);
-  will-change: opacity, transform, filter;
+  transform: none;
+  filter: none;
+  transition: opacity .6s ease;
+  will-change: opacity;
 }
 
 /* Activación por sección */
@@ -1023,8 +1028,8 @@ section.is-visible h3,
 section.is-visible p,
 section.is-visible .event-icon {
   opacity: 1;
-  transform: translateY(0) scale(1);
-  filter: blur(0);
+  transform: none;
+  filter: none;
 }
 
 /* Stagger dentro de la sección */
@@ -1079,11 +1084,9 @@ section .btn-outline,
 section a.btn-outline {
 
   opacity: 0;
-  transform: translateX(-120px);
-  transition: 
-    transform 1s cubic-bezier(.22,1,.36,1),
-    opacity .9s ease;
-  will-change: transform, opacity;
+  transform: none;
+  transition: opacity .6s ease;
+  will-change: opacity;
 }
 
 /* Cuando la sección es visible */
@@ -1092,7 +1095,18 @@ section.is-visible .btn-outline,
 section.is-visible a.btn-outline {
 
   opacity: 1;
-  transform: translateX(0);
+  transform: none;
+}
+
+@media (hover: none) {
+  button:hover, .btn-outline:hover, a.btn-outline:hover,
+  button:active, .btn-outline:active, a.btn-outline:active,
+  .event-card:hover .event-photo img,
+  .envelope:hover {
+    transform: none;
+    box-shadow: none;
+    filter: none;
+  }
 }
 
 /* Stagger bonito si hay varios botones */

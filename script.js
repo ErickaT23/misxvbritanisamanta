@@ -28,12 +28,11 @@ if (envelope) {
 
 // 6) Foto separador rotativa (si existe el elemento)
 initRotatingSep([
-  "Images/FOTOS/h1.jpg",
-  "Images/FOTOS/h2.jpg",
-  "Images/FOTOS/h3.jpg",
-  "Images/FOTOS/h4.jpg",
-  "Images/FOTOS/h5.jpg",
-  "Images/FOTOS/h6.jpg"
+  "Images/FOTOS/V4.jpeg",
+  "Images/FOTOS/V1.jpeg",
+  "Images/FOTOS/V2.jpeg",
+  "Images/FOTOS/V3.jpeg",
+  "Images/FOTOS/V5.jpeg"
 ]);
 });
 
@@ -399,22 +398,24 @@ const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightboxImg");
 const closeLightbox = document.querySelector(".lightbox-close");
 
-galleryImages.forEach(img => {
-  img.addEventListener("click", () => {
-    lightbox.style.display = "flex";
-    lightboxImg.src = img.src;
+if (galleryImages.length > 0 && lightbox && lightboxImg && closeLightbox) {
+  galleryImages.forEach((img) => {
+    img.addEventListener("click", () => {
+      lightbox.style.display = "flex";
+      lightboxImg.src = img.src;
+    });
   });
-});
 
-closeLightbox.addEventListener("click", () => {
-  lightbox.style.display = "none";
-});
-
-lightbox.addEventListener("click", (e) => {
-  if(e.target === lightbox){
+  closeLightbox.addEventListener("click", () => {
     lightbox.style.display = "none";
-  }
-});
+  });
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = "none";
+    }
+  });
+}
 
 // =============================
 // BUENOS DESEOS (VERSIÓN LIMPIA)
@@ -431,6 +432,12 @@ window.toggleWishes = function () {
 
   // Mostrar
   if (isHidden) {
+
+    if (typeof escucharDeseos !== "function") {
+      wishesDiv.innerHTML = "No se pudo cargar la lista de deseos.";
+      wishesDiv.classList.remove("hidden");
+      return;
+    }
 
     wishesDiv.innerHTML = "Cargando deseos...";
 
@@ -485,6 +492,11 @@ window.submitWish = function () {
 
   if (!name || !message) {
     alert("Por favor completa tu nombre y mensaje.");
+    return;
+  }
+
+  if (typeof guardarDeseo !== "function") {
+    alert("No se pudo enviar tu mensaje en este momento.");
     return;
   }
 
