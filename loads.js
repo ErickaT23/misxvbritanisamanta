@@ -146,6 +146,7 @@ const guests = [
   { id: "143", name: "Familia Guzmán Lanza", passes: 4 },
   { id: "144", name: "Familia Escuadrón Grave", passes: 4 },
   { id: "145", name: "Carlos Herrera y Valery Herrera Mendizaba", passes: 2 },
+  { id: "146", name: "Familia Batz Pérez", passes: 3},
 ];
 
 // Helper: leer parámetros ?id=1
