@@ -24,7 +24,7 @@ const guests = [
   { id: "21", name: "Familia Juarez Ruiz", passes: 4 },
   { id: "22", name: "Familia Juarez Guzman", passes: 2 },
   { id: "23", name: "Familia Cetino Juarez", passes: 3 },
-  { id: "24", name: "José Asencio Juarez", passes: 1 },
+  { id: "24", name: "Esposos Asencio", passes: 2 },
   { id: "25", name: "Familia Ramos Escobar", passes: 5 },
   { id: "26", name: "Familia Gozalez Estévez", passes: 3 },
   { id: "27", name: "Any Martínez e hijos", passes: 3 },
