@@ -82,7 +82,7 @@ const guests = [
   { id: "79", name: "Familia Lemus Mejía", passes: 3 },
   { id: "80", name: "Jania Gularte", passes: 1 },
   { id: "81", name: "Seño Amparo e hija", passes: 2 },
-  { id: "82", name: "Familia Beltetón Soriano", passes: 5 },
+  { id: "82", name: "Familia Soriano Beltetón", passes: 5 },
   { id: "83", name: "Claudel Belteton e hijo", passes: 2 },
   { id: "84", name: "Noris San José", passes: 1 },
   { id: "85", name: "Sonia Hernández e hijos", passes: 4 },
@@ -141,6 +141,11 @@ const guests = [
   { id: "138", name: "Carmen", passes: 1 },
   { id: "139", name: "David", passes: 2 },
   { id: "140", name: "Celidon", passes: 2 },
+  { id: "141", name: "Mía Jimena Martínez Reyes", passes: 1 },
+  { id: "142", name: "Servidoras Jesús Mi Salvador", passes: 2 },
+  { id: "143", name: "Familia Guzmán Lanza", passes: 4 },
+  { id: "144", name: "Familia Escuadrón Grave", passes: 4 },
+  { id: "145", name: "Carlos Herrera y Valery Herrera Mendizaba", passes: 2 },
 ];
 
 // Helper: leer parámetros ?id=1
