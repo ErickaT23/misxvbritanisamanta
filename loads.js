@@ -45,7 +45,7 @@ const guests = [
   { id: "42", name: "Esposos Solís Estupe", passes: 2 },
   { id: "43", name: "Familia Grave Blanco", passes: 4 },
   { id: "44", name: "Familia Grave", passes: 4 },
-  { id: "45", name: "Familia Pachac Uggetti", passes: 5 },
+  { id: "45", name: "Familia Pacach Uggetti", passes: 5 },
   { id: "46", name: "Familia Pacach Noriega", passes: 5 },
   { id: "47", name: "Josué Sian y familia", passes: 3 },
   { id: "48", name: "Noelia Ortíz e hijo", passes: 2 },
