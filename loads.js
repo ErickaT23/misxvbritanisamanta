@@ -152,6 +152,11 @@ const guests = [
   { id: "149", name: "Kevin", passes: 2 },
   { id: "150", name: "Aron", passes: 2 },
   { id: "151", name: "Tia Carmela Leal", passes: 1 },
+  { id: "152", name: "Rashel Juárez", passes: 1 },
+  { id: "153", name: "Daniel Luna", passes: 1 },
+  { id: "154", name: "Diego Luna", passes: 1 },
+  { id: "155", name: "Cecia", passes: 1 },
+  { id: "156", name: "José David", passes: 1 },
 ];
 
 // Helper: leer parámetros ?id=1
